@@ -67,25 +67,27 @@ CREATE TABLE aluno (
 
 Rodar o Mysql Workbench
 
+---
 
-> Em casa primeiro rodar o docker desktop, depois rodar o container docker
+Em casa primeiro rodar o docker desktop, depois rodar o container docker
 
-```docker
+    ```docker
 
-docker run --name mysql-jdbc -e MYSQL_ROOT_PASSWORD=1234 -e MYSQL_DATABASE=escola -p 3306:3306 -d mysql
-```
+    docker run --name mysql-jdbc -e MYSQL_ROOT_PASSWORD=1234 -e MYSQL_DATABASE=escola -p 3306:3306 -d mysql
+    ```
 
 Após criar o container verificar com:
 
-```docker
-docker ps
-``` 
+    ```docker
+    docker ps
+    ``` 
 
 Reiniciou o PC e está criado o container basta rodar:
 
-```
-docker start mysql-jdbc
-```
+    ```
+    docker start mysql-jdbc
+    ```
+---
 
 ### Conexão com o banco 
 > crie um arquivo para conexão `ConexaoBD.java`
